@@ -100,6 +100,17 @@ function cheakpf(){
     }
     tempEle.innerHTML = "현재 사용중인 플랫폼 : " + string + "\n기타 정보 : " + platformInfo + ", 윈도우 전용 : " + platformInfo.indexOf('windows')
 }
+var colorList = ['blue', 'red', 'yellow', 'white', 'aqua', 'purple']
+var i = 0
+function changec(){
+    if(i >= colorList.length){
+        i = 0
+    }else{
+        var bodyTag = document.getElementById("body")
+        bodyTag.style.backgroundColor = colorList[i]
+        i++
+    }
+}
 //screen 객체 설명(나중에 사용해보기)
 /*
 screen.width = 화면의 너빗값(가로)을 반환

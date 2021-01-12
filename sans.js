@@ -82,6 +82,28 @@ function ctimeout(){
         tempEle.innerHTML = "종료시킬 타임아웃이 없습니다."
     }
 }
+//screen 객체 설명(나중에 사용해보기)
+/*
+screen.width = 화면의 너빗값(가로)을 반환
+screen.height = 화면의 높잇값(세로)을 반환
+screen.availWidth = 화면의 너빗값(작업 표시줄 제외)
+screen.availHeight = 화면의 높잇값(작업 표시줄 제외)
+screen.colorDepth = 사용자 모니터가 표현 가능한 컬러 bit을 반환
+
+location 객체 설명(나중에 사용해보기)
+location.href = 주소를 설정하거나 현재 URL을 반환
+location.hash = URL의 해시값(#)을 반환
+location.hostname = URL의 호스트 이름을 설정하거나 반환
+location.host = URL의 호스트 이름과 포트 번호를 반환
+location.protocol = URL의 프로토콜을 반환
+location.reload() = 새로고침
+
+history 객체 설명(나중에 사용해보기)
+history.back = 전 사이트로 이동
+history.forward() = 방문했던 사이트로 이동(없으면...?)
+history.go(number) = 숫자에 -2를 입력하면 2번 전에 방문한 사이트로 이동, +시 앞으로 이동
+history.length = 방문 기록에 저장되어있는 목록의 갯수 반환
+*/
 document.write("<p class='blue'>파란글씨</p>")
 document.write("<p class='red'>빨간글씨</p>")
 document.write("<p class='yellow'>노란글씨?(html 파일에서 color을 선언해야함)</p>")

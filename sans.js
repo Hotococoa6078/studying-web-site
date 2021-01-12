@@ -28,7 +28,12 @@ function tosite(){
         break
     }
     if(url){
-        location.href = "http://" + url//해당 사이트로 이동(이동(새로운 창 X))
+        var q = confirm('새 탭으로 여시려면 확인, 해당 탭에서 이동하려면 취소를 누르세요')
+        if(!q){
+            location.href = "http://" + url//해당 사이트로 이동(이동(새로운 창 X))
+        }else{
+            open("http://" + url, "_blank")
+        }
     }
 }
 function popup(){
@@ -46,12 +51,36 @@ function banbok(){
     document.getElementById('wa').append(tempEle)
     var count = 0
     var tt = prompt("몇초 간격으로 실행시킬건가요?", 1)
-    test = setInterval(function() {tempEle.innerHTML = "샌즈" + (++count)}, tt*1000) //책 119쪽 참고
-}                         //ㄴ function은 선택사항
-function cancelb(){
+    if(tt){
+        test = setInterval(function() {tempEle.innerHTML = "샌즈" + (++count)}, tt*1000) //책 119쪽 참고
+    }                      //ㄴ function은 선택사항
+}
+    function cancelb(){
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
     clearInterval(test)
+}
+var ttest
+var dd = false
+function stimeout(){
+    dd = false
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    var tt = prompt("몇초 후에 실행시킬건가요?", 1)
+    if(tt){
+        dd = true
+        ttest = setTimeout(function() {tempEle.innerHTML = tt+"초 후에 나온 텍스트"}, tt*1000)
+    }
+}
+function ctimeout(){
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    if(dd === true){
+        tempEle.innerHTML = "실행될 타임아웃을 종료시켰습니다."
+        dd = false
+    }else{
+        tempEle.innerHTML = "종료시킬 타임아웃이 없습니다."
+    }
 }
 document.write("<p class='blue'>파란글씨</p>")
 document.write("<p class='red'>빨간글씨</p>")

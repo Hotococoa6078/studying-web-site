@@ -150,3 +150,4 @@ document.write("<p class='yellow'>노란글씨?(html 파일에서 color을 선�
 태그정보
 document.write("<img src='images URL'>", "<br>") <- 이미지 불러오는거
 */
+//이제 html은 끝, css 공부하자

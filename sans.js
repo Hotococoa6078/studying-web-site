@@ -83,6 +83,23 @@ function ctimeout(){
         tempEle.innerHTML = "종료시킬 타임아웃이 없습니다."
     }
 }
+function cheakpf(){
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    var platformInfo = navigator.userAgent.toLowerCase()
+    var string
+
+    if(platformInfo.indexOf('windows') >= 0){
+        string = 'windows'
+    }else if(platformInfo.indexOf('macintosh') >= 0){
+        string = 'macintosh'
+    }else if(platformInfo.indexOf('iphone') >= 0){
+        string = 'iphone'
+    }else if(platformInfo.indexOf('android') >= 0){
+        string = 'android'
+    }
+    tempEle.innerHTML = "현재 사용중인 플랫폼 : " + string + "\n기타 정보 : " + platformInfo + ", 윈도우 전용 : " + platformInfo.indexOf('windows')
+}
 //screen 객체 설명(나중에 사용해보기)
 /*
 screen.width = 화면의 너빗값(가로)을 반환

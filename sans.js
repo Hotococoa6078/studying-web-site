@@ -120,5 +120,5 @@ document.write("<p class='red'>빨간글씨</p>")
 document.write("<p class='yellow'>노란글씨?(html 파일에서 color을 선언해야함)</p>")
 /*
 태그정보
-document.write("<img src='images URL'><br>")
+document.write("<img src='images URL'>", "<br>") <- 이미지 불러오는거
 */

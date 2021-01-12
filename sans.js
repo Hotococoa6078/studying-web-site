@@ -28,8 +28,30 @@ function tosite(){
         break
     }
     if(url){
-        location.href = "http://" + url //해당 사이트로 이동(이동(새로운 창 X))
+        location.href = "http://" + url//해당 사이트로 이동(이동(새로운 창 X))
     }
+}
+function popup(){
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    open("https://www.naver.com", "와 네이버 아시는구나!(창 이름)","width=350, height=400, left=50,top=10, scrollbars=no") //창이름 적용 안됨
+    //scrollbars = 스크롤 노출 여부 (다음과 같은 옵션은 yes, no로 설정)
+    //location = URL입력란 노출 여부
+    //status = 상태 표시줄 노출 여부
+    //toolbars = 도구 상자영역 노출 여부
+}
+var test
+function banbok(){
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    var count = 0
+    var tt = prompt("몇초 간격으로 실행시킬건가요?", 1)
+    test = setInterval(function() {tempEle.innerHTML = "샌즈" + (++count)}, tt*1000) //책 119쪽 참고
+}                         //ㄴ function은 선택사항
+function cancelb(){
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    clearInterval(test)
 }
 document.write("<p class='blue'>파란글씨</p>")
 document.write("<p class='red'>빨간글씨</p>")

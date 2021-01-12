@@ -76,6 +76,7 @@ function ctimeout(){
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
     if(dd === true){
+        clearTimeout(ttest)
         tempEle.innerHTML = "실행될 타임아웃을 종료시켰습니다."
         dd = false
     }else{
@@ -103,7 +104,21 @@ history.back = 전 사이트로 이동
 history.forward() = 방문했던 사이트로 이동(없으면...?)
 history.go(number) = 숫자에 -2를 입력하면 2번 전에 방문한 사이트로 이동, +시 앞으로 이동
 history.length = 방문 기록에 저장되어있는 목록의 갯수 반환
+
+navigatior 객체 설명(나중에 사용해보기)
+navigatior.appCodeName = 현재 브라우저의 코드명 반환
+navigatior.appName = 현재 브라우저의 이름을 반환
+navigatior.appVersion = 현재 브라우저의 버전 정보를 반환
+navigatior.language = 현재 브라우저가 사용중인 언어를 반환
+navigatior.product = 현재 브라우저의 엔진 이름을 반환
+navigatior.platform = 현재 컴퓨터의 운영체제 정보를 반환
+navigatior.onLine = 온라인(네트워크 연결 상태)여부를 반환
+navigatior.userAgent = 브라우저와 운영체제의 종합 정보를 반환
 */
 document.write("<p class='blue'>파란글씨</p>")
 document.write("<p class='red'>빨간글씨</p>")
 document.write("<p class='yellow'>노란글씨?(html 파일에서 color을 선언해야함)</p>")
+/*
+태그정보
+document.write("<img src='images URL'><br>")
+*/

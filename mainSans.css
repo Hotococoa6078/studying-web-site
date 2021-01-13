@@ -1,0 +1,16 @@
+p {
+    color:red
+}
+#id {
+    color:orange
+}
+.class{
+    color:yellow
+}
+
+/*
+기타 선택자 속성들
+p.box {
+  color: red;
+}
+*/

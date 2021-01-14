@@ -7,10 +7,13 @@ p {
 .class{
     color:yellow
 }
-
-/*
-기타 선택자 속성들
-p.box {
-  color: red;
+/* p.class 같이 중첩 사용가능*/
+b, #c, .d {
+    color: green;
 }
-*/
+#sans1 .youKnow{
+    color:skyblue
+}
+#sans2 .youKnow{
+    color:blue
+}

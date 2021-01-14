@@ -69,7 +69,10 @@ function stimeout(){
     var tt = prompt("몇초 후에 실행시킬건가요?", 1)
     if(tt){
         dd = true
-        ttest = setTimeout(function() {tempEle.innerHTML = tt+"초 후에 나온 텍스트"}, tt*1000)
+        ttest = setTimeout(function() {
+            tempEle.innerHTML = tt+"초 후에 나온 텍스트"
+            dd = false
+        }, tt*1000)
     }
 }
 function ctimeout(){

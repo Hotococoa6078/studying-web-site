@@ -111,6 +111,11 @@ function changec(){
         i++
     }
 }
+$(".onMouse").on("mouseover focus", function() {
+    var tempEle = document.createElement('div')
+    document.getElementById('wa').append(tempEle)
+    tempEle.innerHTML = "샌즈"
+})
 //screen 객체 설명(나중에 사용해보기)
 /*
 screen.width = 화면의 너빗값(가로)을 반환
@@ -142,11 +147,6 @@ navigatior.product = 현재 브라우저의 엔진 이름을 반환
 navigatior.platform = 현재 컴퓨터의 운영체제 정보를 반환
 navigatior.onLine = 온라인(네트워크 연결 상태)여부를 반환
 navigatior.userAgent = 브라우저와 운영체제의 종합 정보를 반환
-*/
-document.write("<p class='blue'>파란글씨</p>")
-document.write("<p class='red'>빨간글씨</p>")
-document.write("<p class='yellow'>노란글씨?(html 파일에서 color을 선언해야함)</p>")
-/*
 태그정보
 document.write("<img src='images URL'>", "<br>") <- 이미지 불러오는거
 */

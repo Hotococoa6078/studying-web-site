@@ -12,6 +12,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link href="commonSans.css" rel="stylesheet" type="text/css" />
     <link href="mainSans.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
@@ -50,9 +51,21 @@
     <button onclick="ctimeout();">타임아웃 강제종료</button>
     <button onclick="cheakpf();">플렛폼 확인</button>
     <button onclick="changec();">바탕 색 변경</button>
+    <button class='onMouse'>마우스 올리면 글자 생성</button>
     <p>요소 선택자</p>
     <p id='id'>ID 선택자</p>
     <p class='class'>class 선택자</p>
+    <b>다중선택자1</b>
+    <b id="c">다중선택자2</b>
+    <b class="d">다중선택자3</b>
+    <sans id="sans1">
+        <wa class="youKnow">후손선택자1</wa>
+    </sans>
+    <sans id="sans2">
+        <wa class="youKnow">
+            <difficult>후손선택자2(wa의 자손 difficult)</difficult>
+        </wa>
+    </sans>
     <span id="wa"></span>
     <script src="sans.js"></script>
 </body>

@@ -119,12 +119,10 @@ $(".onMouse").on("mouseover focus", function() {
     document.getElementById('wa').append(tempEle)
     tempEle.innerHTML = "샌즈"
 })
-function printip(){
+$(".printip").ajax({
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
-}
-$.(".printip").ajax({
-    var url: "https://api.ip.pe.kr/json"
+    url: "https://api.ip.pe.kr/json"
 }).done(function(api){
     tempEle.innerHTML = $"ip : {api.ip}, country : {api.country_code}"
 }).fail(function(){

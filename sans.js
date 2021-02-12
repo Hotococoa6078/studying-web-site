@@ -115,6 +115,7 @@ function changec(){
     }
 }
 //여기서부터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/*
 $(".onMouse").on("mouseover focus", function() {
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
@@ -129,6 +130,7 @@ $(".printip").ajax({
 }).fail(function(){
     alert("로딩 실패")
 })
+*/
 //여기까지 어케하는지 모르겟음ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 //screen 객체 설명(나중에 사용해보기)
 /*
